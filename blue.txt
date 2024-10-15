@@ -1,5 +1,4 @@
-player_name1
-player_name2
-player_name3
-player_name4
-player_name5
+左边1
+左边2
+左边3
+左边4

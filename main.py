@@ -21,11 +21,10 @@ def assign_heroes(players, heroes, n):
 def assign_equipments(assignments, equipments):
     for player in assignments:
         for i in range(6):
-            equipment = random.choice(equipments)
-            if equipment not in assignments[player]:
-                assignments[player].append(equipment)
-            else:
-                i -= 1
+            while equipment in assignments[player]:
+                equipment = random.choice(equipments)
+            assignments[player].append(equipment)
+
 
 def one_more_equipment(assignments, equipments, player):
     if player in assignments:
