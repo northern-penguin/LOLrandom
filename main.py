@@ -21,6 +21,7 @@ def assign_heroes(players, heroes, n):
 def assign_equipments(assignments, equipments):
     for player in assignments:
         for i in range(6):
+            equipment = random.choice(equipments)
             while equipment in assignments[player]:
                 equipment = random.choice(equipments)
             assignments[player].append(equipment)
